@@ -1,0 +1,27 @@
+<!--pages/poem/poem.wxml-->
+<view class="cu-bar">
+  <view class="action" bindtap="backto">
+    <text class="cuIcon-back text-gray"></text> 返回
+  </view>
+</view>
+<view class="container">
+  <view class="poemcontent">
+    <view class="poemcontent-title">静夜思</view>
+    <view class="poemcontent-name">李白</view>
+    <view class="poemcontent-write">
+      <view>床前明月光，</view>
+      <view>疑是地上霜。</view>
+      <view>举头望明月，</view>
+      <view>低头思故乡。</view>
+    </view>
+  </view>
+  <view class="poemanalysis">
+    <text class="poemanalysis-title">解析：</text>
+    <view>
+      这首诗写的是在寂静的月夜思念家乡的感受。诗的前两句，是写诗人在作客他乡的特定环境中一刹那间所产生的错觉。一个独处他乡的人，白天奔波忙碌，倒还能冲淡离愁，然而一到夜深人静的时候，心头就难免泛起阵阵思念故乡的波澜。何况是在月明之夜，更何况是月色如霜的秋夜。“疑是地上霜”中的“疑”字，生动地表达了诗人睡梦初醒，迷离恍惚中将照射在床前的清冷月光误作铺在地面的浓霜。而“霜”字用得更妙，既形容了月光的皎洁，又表达了季节的寒冷，还烘托出诗人飘泊他乡的孤寂凄凉之情。
+      诗的后两句，则是通过动作神态的刻画，深化思乡之情。“望”字照应了前句的... 古诗文网>>
+      这是写远客思乡之情的诗，诗以明白如话的语言雕琢出明静醉人的秋夜的意境。它不追求想象的新颖奇特，也摒弃了辞藻的精工华美；它以清新朴素的笔触，抒写了丰富深曲的内容。境是境，情是情，那么逼真，那么动人，百读不厌，耐人寻绎。无怪乎有人赞它是“妙绝古今”。
+      诗词名句网>>
+    </view>
+  </view>
+</view>

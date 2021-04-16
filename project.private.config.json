@@ -1,0 +1,35 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/dialogue/dialogue",
+          "pathName": "pages/dialogue/dialogue",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/poetpage/poetpage",
+          "pathName": "pages/poetpage/poetpage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/poem/poem",
+          "pathName": "pages/poem/poem",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

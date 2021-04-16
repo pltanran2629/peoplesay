@@ -1,0 +1,29 @@
+/* pages/poetpage/poetpage.wxss */
+.cu-bar{
+  margin-top: 40rpx;
+}
+.buttonplacetime {
+  margin-left: 200rpx;
+  margin-bottom: 60rpx;
+}
+
+.buttonplacelife {
+  margin-left: 200rpx;
+}
+
+.thatbutton {
+  height: 100rpx;
+  font-family: KaiTi;
+  font-size: 23px;
+  background-image: url(https://img1.baidu.com/it/u=216660009,3790029769&fm=26&fmt=auto&gp=0.jpg);
+  background-size: 100%;
+}
+
+.imageplace {
+  margin-top: 80rpx;
+  padding-right: 250rpx;
+}
+
+.poetimage {
+  width: 300rpx;
+}

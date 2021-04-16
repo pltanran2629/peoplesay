@@ -1,0 +1,34 @@
+/* pages/poem/poem.wxss */
+.cu-bar{
+  margin-top: 40rpx;
+}
+.container{
+  padding-top: 10rpx;
+}
+.poemcontent{
+  margin-top: 60rpx;
+  font-family: KaiTi;
+  padding: 20rpx;
+}
+.poemcontent-title{
+  font-size: 30px;
+  margin-bottom: 9rpx;
+  text-align: center;
+}
+.poemcontent-name{
+font-size: 18px;
+text-align: right;
+margin-bottom: 9rpx;
+}
+.poemcontent-write{
+  font-size: 20px;
+  text-align: center;
+}
+.poemanalysis-title{
+  font-weight: 1000;
+}
+.poemanalysis{
+  padding:10rpx 80rpx;
+  font-size: 18px;
+  font-family: KaiTi;
+}

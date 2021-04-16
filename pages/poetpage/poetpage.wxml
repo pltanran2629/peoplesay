@@ -1,0 +1,19 @@
+<!--pages/poetpage/poetpage.wxml-->
+<view class="cu-bar">
+  <view class="action" bindtap="backtodialog">
+    <text class="cuIcon-back text-gray"></text> 返回
+  </view>
+</view>
+<view class="container">
+  <view class="buttonplace">
+    <view class="buttonplacetime">
+      <button class="cu-btn thatbutton">时间畅游</button>
+    </view>
+    <view class="buttonplacelife">
+      <button class="cu-btn thatbutton">游历一生</button>
+    </view>
+  </view>
+  <view class="imageplace">
+    <image src="../../image/poetpage/libai.png" class="poetimage"></image>
+  </view>
+</view>

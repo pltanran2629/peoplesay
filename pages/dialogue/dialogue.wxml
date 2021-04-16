@@ -1,0 +1,18 @@
+<!--pages/dialogue/dialogue.wxml-->
+<view class="container">
+  <view class="cu-form-group margin-top">
+    <input placeholder="搜索诗人..." name="input" class="searcharea"></input>
+    <text class="cuIcon-search"></text>
+  </view>
+  <view>
+    <view class="padding text-center animation-slide-left" bindtap="topoetpage">
+      <view class="padding-xl radius shadow-warp bg-white margin-top searchexample">李白</view>
+    </view>
+    <view class="padding text-center animation-slide-right">
+      <view class="padding-xl radius shadow-warp bg-white margin-top searchexample">杜甫</view>
+    </view>
+    <view class="padding text-center animation-slide-left">
+      <view class="padding-xl radius shadow-warp bg-white margin-top searchexample">柳宗元</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/dialogue/dialogue",
+    "pages/cloudpic/cloudpic",
+    "pages/center/center",
+    "pages/poetpage/poetpage",
+    "pages/poem/poem"
+  ],
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#778899",
+    "backgroundColor": "#F1ECCE",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "image/tabbar/recommendsele.png",
+        "iconPath": "image/tabbar/recommend.png",
+        "pagePath": "pages/index/index",
+        "text": "推荐"
+      },
+      {
+        "selectedIconPath": "image/tabbar/dialogsele.png",
+        "iconPath": "image/tabbar/dialog.png",
+        "pagePath": "pages/dialogue/dialogue",
+        "text": "对话"
+      },
+      {
+        "selectedIconPath": "image/tabbar/cloudpicsele.png",
+        "iconPath": "image/tabbar/cloudpic.png",
+        "pagePath": "pages/cloudpic/cloudpic",
+        "text": "云图"
+      },
+      {
+        "selectedIconPath": "image/tabbar/minesele.png",
+        "iconPath": "image/tabbar/mine.png",
+        "pagePath": "pages/center/center",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "component": true,
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

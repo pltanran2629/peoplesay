@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="main">
+    <swiper class="main-recommend" indicator-dots="true">
+      <swiper-item class="main-recommend-one">
+        <text class="main-recommend-one-title">李白那些事</text>
+        <view class="main-recommend-one-content">中心论坛更多 思想政治教育研究中心2021年硕士研究生拟录取名单2021/04/09 东北师范大学思
+          想政治教育研究中心2021年硕士研究生 网络远程复试流程通...2021/03/31 东北师范大学思想政治教育</view>
+      </swiper-item>
+      <swiper-item class="main-recommend-one">
+        <text class="main-recommend-one-title">李白那些事</text>
+        <view class="main-recommend-one-content">中心论坛更多 思想政治教育研究中心2021年硕士研究生拟录取名单2021/04/09 东北师范大学思
+          想政治教育研究中心2021年硕士研究生 网络远程复试流程通...2021/03/31 东北师范大学思想政治教育</view>
+      </swiper-item>
+      <swiper-item class="main-recommend-one">
+        <text class="main-recommend-one-title">李白那些事</text>
+        <view class="main-recommend-one-content">中心论坛更多 思想政治教育研究中心2021年硕士研究生拟录取名单2021/04/09 东北师范大学思
+          想政治教育研究中心2021年硕士研究生 网络远程复试流程通...2021/03/31 东北师范大学思想政治教育</view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

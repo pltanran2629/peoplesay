@@ -1,0 +1,339 @@
+.con {
+  margin: 0 auto;
+}
+
+.poetimgplace {
+  position: fixed;
+  height: 832rpx;
+  width: 400rpx;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-Index: 1;
+}
+
+.model {
+  position: absolute;
+  width: 684rpx;
+  height:1100rpx;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* cursor: pointer; */
+  z-Index: 2;
+  border-radius: 10rpx;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/windowbg.png?versionId=CAEQBhiBgID7vNnGzhciIDdhMmZmODFhNmU4YTRhYTQ4ZmJiZDZiN2Q5YTgwZGY3);
+  background-size: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.windowcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.closefa {
+  position: absolute;
+  right: 28rpx;
+  top: 28rpx;
+}
+
+
+.close {
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  z-index: 99;
+}
+
+.poetrylife {
+  font-family: stylefont;
+  font-size: 50rpx;
+  width: 431rpx;
+  height: 82rpx;
+  text-align: center;
+  background-size: 100%;
+  margin-top: 13rpx;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/windowtitle.png?versionId=CAEQBhiBgMDKvNnGzhciIDIwYWMyYWEyOGNjYTRmNmI4YmNiM2I3NzBiOWFlMTdm);
+}
+
+.line {
+  width: 23rpx;
+  height: 1603rpx;
+  float: right;
+}
+
+.linebox {
+  margin-right: 61rpx;
+  width: 30rpx;
+  float: right;
+}
+
+.lifetravelborder {
+  background-size: 100%;
+  height: 98rpx;
+  width: 301rpx;
+  line-height: 56rpx;
+  text-align: center;
+  font-family: stylefont;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/lifetravelborder.png?versionId=CAEQBhiBgMCNudnGzhciIGJmZDkzMzA0ZTdkMzQ0YWFiNDQ3NWNmNjg5YzA1NTQz);
+}
+
+.lifetravel {
+  width: 350rpx;
+  float: right;
+  position: relative;
+  font-size: 48rpx;
+  margin-bottom: 90rpx;
+}
+
+.circle {
+  width: 39rpx;
+  height: 39rpx;
+  position: absolute;
+  right: -38rpx;
+  top: 20rpx;
+}
+
+.poemtitle {
+  font-size: 40rpx;
+  font-family: kaiti;
+  margin-top: 50rpx;
+}
+
+.poemonetwo {
+  font-family: kaiti;
+  font-size: 36rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.poemonetwo>view>view {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.poemonetwo>view {
+  position: relative;
+  overflow: hidden;
+  height: 40rpx;
+  text-align: right;
+}
+
+.radiochose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.radioitem {
+  width: 550rpx;
+  height: 87.8rpx;
+  background-color: white !important;
+  border-radius: 12rpx;
+  margin-top: 15rpx;
+  font-size: 40rpx;
+  font-family: kaiti;
+  padding-left: 29rpx;
+  position: relative;
+  /* border:rgba(0, 0, 0, 0.3) 1px solid; */
+}
+
+.radiopl {
+  line-height: 80rpx;
+}
+
+radio .wx-radio-input {
+  width: 40rpx;
+  height: 40rpx;
+  border: none;
+  background: white !important;
+  position: absolute;
+  right: -230rpx;
+  top: 25rpx
+}
+
+.rightans {
+  font-size: 38rpx;
+  font-family: kaiti;
+  color: #D45252;
+  margin-top: 30rpx;
+  text-align: center;
+  width: 100%;
+}
+.green{
+  color:forestgreen;
+}
+
+.lifedetail {
+  width: 205rpx;
+  height: 74rpx;
+  background-size: 100%;
+  font-size: 38rpx;
+  font-family: kaiti;
+  text-align: center;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/windowlife.png?versionId=CAEQBhiBgICqvNnGzhciIDU2ZjhkYzA4MjQwMTQyNzFiZDBmYmQyNDhmOTU5Yjdl);
+}
+
+.rightdetail {
+  margin-top: 10rpx;
+  font-size: 38rpx;
+  font-family: kaiti;
+  text-indent: 2rem;
+  padding-right: 50rpx;
+  padding-left: 50rpx;
+}
+
+.next {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 99;
+  align-items: center;
+  padding: 16rpx 0;
+}
+
+.nextques {
+  width: 276rpx;
+  height: 91.4rpx;
+  background-size: 100%;
+  font-size: 38rpx;
+  font-family: stylefont;
+  text-align: center;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/windownextques.png?versionId=CAEQBhiBgIC5vNnGzhciIDliOGM1YmFjM2U3NDRlMWRhYmZlODRkNzlkNTY3NWQy);
+}
+
+.nexttime {
+  width: 276rpx;
+  height: 91.4rpx;
+  background-size: 100%;
+  font-size: 38rpx;
+  font-family: stylefont;
+  text-align: center;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/windownextlife.png?versionId=CAEQBhiBgMCxvNnGzhciIGMyNTRlYjJkNGIwOTQzOWY5NzE0YmRlZWExOWE4Njc2);
+}
+
+.wrongdetail {
+  font-size: 38rpx;
+  font-family: kaiti;
+  margin-top: 7rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 500rpx;
+}
+
+.wrongdetailtab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.wrongdetailtitle {
+  text-align: center;
+  width: 25%;
+  font-size: 38rpx;
+  font-family: stylefont;
+  margin-top: 15rpx;
+  margin-bottom: 7rpx;
+  float: left;
+}
+
+.on {
+  color: #D45252;
+  border-bottom: 3rpx solid #D45252;
+}
+
+.indent {
+  text-indent: 2rem;
+}
+
+.swiper-box {
+  width: 200rpx;
+}
+
+.radiopl {
+  width: 100%;
+  position: relative;
+}
+
+.rightimg {
+  width: 29rpx;
+  height: 29rpx;
+  position: absolute;
+  right: 34rpx;
+  top: 26rpx;
+}
+
+.poemcontext {
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.line-height {
+  line-height: 50rpx;
+}
+
+.wrongname {
+  font-size: 40rpx;
+  font-family: kaiti;
+  margin-bottom: 15rpx;
+  font-weight: 500;
+  text-align: center;
+}
+.wrongpoetname{
+  font-size: 38rpx;
+  font-family: kaiti;
+  text-align: center;
+}
+.lock{
+font-size: 38rpx;
+font-family: kaiti;
+text-align: center;
+}
+.lockimg{
+  width: 40rpx;
+  height: 40rpx;
+  right: 6rpx;
+  position: absolute;
+  top: 30rpx;
+  float: right;
+}
+.inimg{
+  width: 500rpx;
+  height: 400rpx;
+  position: absolute;
+  left: 200rpx;
+  top: 400rpx;
+}
+.iniknow{
+  font-size: 56rpx;
+  color: aliceblue;
+  position: absolute;
+  right: 40rpx;
+  font-family:stylefont;
+  bottom: 400rpx;
+}

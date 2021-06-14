@@ -1,18 +1,20 @@
 <!--pages/dialogue/dialogue.wxml-->
 <view class="container">
-  <view class="cu-form-group margin-top">
-    <input placeholder="搜索诗人..." name="input" class="searcharea"></input>
+  <view class="cu-form-group margin-top margin-bottom">
+    <input placeholder="搜索诗人..." name="input" class="searcharea" bindinput="inputpoetname"></input>
     <text class="cuIcon-search"></text>
   </view>
-  <view>
-    <view class="padding text-center animation-slide-left" bindtap="topoetpage">
-      <view class="padding-xl radius shadow-warp bg-white margin-top searchexample">李白</view>
+  <scroll-view scroll-y="true" style="width:87%;height:1100rpx;">
+    <view class="poetname">
+      <block wx:for="{{poetnameall}}" wx:for-item="item" wx:key="name" wx:for-index="index">
+        <view class="searchexample" bindtap="topoetpage" data-poetid="{{item.poetId}}">
+          <view class="nameplace" >{{item.poetName}}</view>
+        </view>
+      </block>
     </view>
-    <view class="padding text-center animation-slide-right">
-      <view class="padding-xl radius shadow-warp bg-white margin-top searchexample">杜甫</view>
-    </view>
-    <view class="padding text-center animation-slide-left">
-      <view class="padding-xl radius shadow-warp bg-white margin-top searchexample">柳宗元</view>
-    </view>
-  </view>
+  </scroll-view>
+</view>
+<view class="cover" wx:if="{{introduct}}">
+<image class="inimg" src="https://7775-wubh576-1gmqw25u1d0f40a5-1305563425.tcb.qcloud.la/india.png?sign=9389274943d5eb933fc54e7f819e0799&t=1621937955"></image>
+<view class="iniknow" bindtap="iknow">了解后，请点击这里</view>
 </view>

@@ -1,0 +1,16 @@
+.text{
+  font-family: stylefont;
+  font-size: 42rpx;
+  margin-top: 200rpx;
+  margin-bottom: 90rpx;
+}
+.quesbut{
+  background: rgb(238, 234, 232);
+  font-family: stylefont;
+  font-size: 54rpx;
+}
+.oldersay{
+  margin-top: 200rpx;
+  width: 150rpx;
+  height: 150rpx;
+}

@@ -1,0 +1,19 @@
+page{
+  /* background-repeat: no-repeat; */
+/* background-size: 100% 100%; */
+background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/ingterestthingbg2.png?versionId=CAEQBhiBgIDq7dzGzhciIDlkNzk3NmQ4NmMwNjRlMGQ5MGRlYmMwODFjZWViMWUw);
+}
+.aboutus{
+  margin-top: 150rpx;
+  margin-bottom: 60rpx;
+  font-size: 52rpx;
+  font-family: stylefont;
+}
+.aboutuscontent{
+margin: 0rpx 90rpx 90rpx 90rpx;
+font-size: 34rpx;
+line-height: 60rpx;
+text-indent: 2rem;
+font-family: kaiti;
+font-weight: 500;
+}

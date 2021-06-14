@@ -1,0 +1,115 @@
+<!--pages/lifetravel/lifetravel.wxml-->
+<view class="cu-bar">
+  <view class="action" bindtap="backtopoetpage">
+    <text class="cuIcon-back text-gray"></text> 返回
+  </view>
+</view>
+<view class="con">
+  <view class="linebox">
+    <image src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/lifetravelline.png?versionId=CAEQBhiBgMCJudnGzhciIGQyZTgzYTE5YjU3YzQwYjI5ZjkwOTFiNDk4YjI0ZmVk" class="line"></image>
+  </view>
+  <block wx:for="{{period}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+    <view class="lifetravel">
+      <image src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/lifetravelcircle.png?versionId=CAEQBhiBgMC0udnGzhciIDYzOWUzMzE5ZTM2ZTQzMGQ5YzRjMDJhN2I4NjE2MDVj" class="circle"></image>
+      <view class="lockbox" wx:if="{{item.lifeId>maxlifeid}}"><image src="../../image/timetravel/lock.svg" class="lockimg"></image></view>
+      <view class="lifetravelborder animation-slide-left" data-lifeid="{{item.lifeId}}" data-index="{{index}}"
+        bindtap="showcover">
+        <text style="line-height:96rpx;"> {{item.lifeSection}}</text>
+      </view>
+    </view>
+  </block>
+  <view>
+    <image src="{{poetimg}}" class="poetimgplace"></image>
+  </view>
+</view>
+<view class="cover" wx:if="{{showcover}}" wx:key="question">
+  <view class="model">
+
+    <view class="closefa" bindtap="close" >
+          <image class="close"src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/widowclose.png?versionId=CAEQBhiBgMCBvNnGzhciIGY3ZTE0YmExNGRlNTQ3ZWU4NDA5NWQ0NTgxOGFiYjkz"></image>
+        </view>
+    <scroll-view scroll-y="true" style="height:940rpx;">
+      <view wx:if="{{!showchoseques}}" class="lock">您尚未解锁该阶段</view>
+      <view class="windowcontent" wx:if="{{showchoseques}}">
+        <view class="poetrylife"><text style="line-height:86rpx;">{{poetrylife}}</text></view>
+        <view class="poemtitle">{{poetryname}}</view>
+        <view class="poemonetwo">
+          <block wx:for="{{poemquestion}}" wx:if="{{index<4}}" wx:key="poem">
+            <view style="width: {{onepoem}}em" wx:if="{{index<2}}"><view>{{item}}</view></view>
+          </block>
+        </view>
+        <view class="poemonetwo">
+          <block wx:for="{{poemquestion}}" wx:if="{{index<4}}" wx:key="poem">
+            <view style="width: {{onepoem}}em" wx:if="{{index<4&&index>1}}"><view>{{item}}</view></view>
+          </block>
+        </view>
+        <view>
+          <radio-group bindchange="bandleChange">
+            <block class="radiochose" wx:for="{{poemradio}}" wx:key="radioplace">
+              <view class="radioitem">
+                <radio color="white" value="{{index}}" name="poem" checked="{{choose}}" disabled="{{disable}}"
+                  class="radiopl">
+                  <text style="line-height:80rpx;">{{item}}</text>
+                  <image wx:if="{{righanwser&&index==rightnum}}" src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/windowright.png?versionId=CAEQBhiBgMC7vNnGzhciIGI5ZmJlNWEyZDhiMDQ4OTdiNGI2NjI1ZTU5MjEyMjlh"
+                    class="rightimg"></image>
+                  <image wx:if="{{wrongeanwser&&index!=rightnum&&choosewhat==index}}"
+                    src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/windowwrong.png?versionId=CAEQBhiBgMDqvNnGzhciIDJjYjMxZGY3M2E0NzQyYjhiMTZmYjEyYzdkODhlZWIy" class="rightimg"></image>
+                </radio>
+              </view>
+            </block>
+          </radio-group>
+        </view>
+        <view wx:if="{{righanwser}}" class="rightans green">回答正确,成功解锁</view>
+        <view wx:if="{{righanwser}}" class='lifedetail'><text style="line-height:76rpx;">生平详情</text></view>
+        <view wx:if="{{wrongeanwser}}" class="rightans">错误解析</view>
+        <view wx:if="{{righanwser}}" class="rightdetail"><text class="rightdetailtext">{{rightdetail}}</text></view>
+        <view class="wrongdetail" wx:if="{{wrongeanwser}}">
+          <view class="wrongdetailtab">
+            <view class="wrongdetailtitle {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">原文</view>
+            <view class="wrongdetailtitle {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">译文</view>
+            <view class="wrongdetailtitle {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">赏析</view>
+            <view class="wrongdetailtitle {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">背景</view>
+
+          </view>
+
+          <swiper current="{{currentTab}}" style="height:500rpx;width:100%;" bindchange="bindChange">
+            <swiper-item class="swiper-box">
+              <scroll-view style="height:100%;width:100%" scroll-y="true">
+                <view class="wrongname">{{poetryname}}</view>
+                <view class="wrongpoetname">[{{poetryDynasty}}]{{poem}}</view>
+                <view class="poemcontext"><text class="line-height">{{context}}</text></view>
+              </scroll-view>
+            </swiper-item>
+            <swiper-item class="swiper-box">
+              <scroll-view style="height:100%;width:100%" scroll-y="true">
+                <view><text class="line-height">{{translate}}</text></view>
+              </scroll-view>
+            </swiper-item>
+            <swiper-item class="swiper-box">
+              <scroll-view style="height:100%;width:100%" scroll-y="true">
+                <view><text class="line-height">{{appreciate}}</text></view>
+              </scroll-view>
+            </swiper-item>
+            <swiper-item class="swiper-box">
+              <scroll-view style="height:100%;width:100%" scroll-y="true">
+                <view><text class="line-height">{{comment}}</text></view>
+              </scroll-view>
+            </swiper-item>
+          </swiper>
+        </view>
+
+      </view>
+    </scroll-view>
+    <view class="next">
+      <view wx:if="{{nextquestion}}" bindtap="showcover" class="nextques"><text style="line-height:70rpx;">再来一题</text>
+      </view>
+      <view wx:if="{{nexttime}}" bindtap="nextlifetime" class="nexttime"><text style="line-height:70rpx;">下一阶段</text>
+      </view>
+    </view>
+
+  </view>
+</view>
+<view class="cover" wx:if="{{introduct}}">
+  <image class="inimg" src="https://7775-wubh576-1gmqw25u1d0f40a5-1305563425.tcb.qcloud.la/inlife.png?sign=3e6aca79aa01b2cb2d7ed3d8c076c726&t=1621949781"></image>
+<view class="iniknow" bindtap="inlife" >了解后，点击此处嗷</view>
+</view>

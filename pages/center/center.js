@@ -1,66 +1,44 @@
 // pages/center/center.js
+const app = getApp()
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    CustomBar: app.globalData.CustomBar,
+    icon: [{
+      name: 'favor',
+      isShow: true
+    }, {
+      name: 'notice',
+      isShow: true
+    }, {
+      name: 'community',
+      isShow: true
+    }, {
+      name: 'group',
+      isShow: true
+    }]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  tonotice: function () {
+    wx.navigateTo({
+      url: '../notice/notice',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleContact(e) {
+    console.log(e.detail.path)
+    console.log(e.detail.query)
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  toaboutus(){
+    wx.navigateTo({
+      url: '../aboutus/aboutus',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  torecord(){
+    wx.navigateTo({
+      url: '../record/record',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  toquestion(){
+    wx.navigateTo({
+      url: '../question/question',
+    })
   }
 })

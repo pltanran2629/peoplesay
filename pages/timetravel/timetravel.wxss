@@ -1,0 +1,277 @@
+/* pages/timetravel/timetravel.wxss */
+page {
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/7-bg.png?versionId=CAEQBhiBgICn59zGzhciIDVlNGQ1OTVlMmQxMDRjOTg4N2ZkYzk2MDM3YzZjOTkw);
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.swiperitemplace {
+  width: 599rpx;
+  height: 455rpx;
+  z-index: -1;
+  position: relative;
+  font-family: stylefont;
+}
+
+.header {
+  margin-top: 100rpx;
+}
+
+.headerswiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.swiper1 {
+  width: 610rpx;
+  height: 465rpx;
+}
+
+.headercontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 3rpx;
+  left: 3rpx;
+  text-align: center;
+  width: 595rpx;
+}
+
+.headercontent-top {
+  font-size: 54rpx;
+  line-height: 60rpx;
+  margin-top: 65rpx;
+}
+
+.headercontent-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 200rpx;
+  margin-top: 30rpx;
+}
+
+.headercontent-center-item {
+  width: 75rpx;
+  height: 160rpx;
+  background-size: 100%;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/timetraveldialogborder.png?versionId=CAEQBhiBgIDUudnGzhciIDIxMTMzMGE2YzI5ZjQ2NDE4YTg4ZWRiZWI2NGJjNTc3);
+}
+
+.twochar {
+  font-size: 52rpx;
+  line-height: 80rpx;
+}
+
+.threechars {
+  font-size: 47rpx;
+  line-height: 55rpx;
+}
+
+.headercontent-center-bottom {
+  width: 130rpx;
+  height: 50rpx;
+}
+
+.content {
+  width: 100%;
+  font-family: poem;
+}
+
+.content-left {
+  float: left;
+  position: fixed;
+  left: -60rpx;
+  bottom: -50rpx;
+  z-index: -1;
+}
+
+.content-left-image {
+  width: 460rpx;
+  height: 800rpx;
+  z-index: -1;
+}
+
+.content-right {
+  width: 480rpx;
+  float: right;
+}
+
+.content-right-ans-text {
+  font-size: 38rpx;
+  line-height: 52rpx;
+  margin: 60rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.content-right-ans {
+  width: 479rpx;
+  height: 400rpx;
+  background-size: 100% 100%;
+  margin-right: 30rpx;
+  float: right;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/timetraveldialogleft.png?versionId=CAEQBhiBgMDXu9nGzhciIDc3YmUwMjQ5NGNmZTQ4NTRhMzllYjM2Nzg3OWU3MjMx)
+}
+
+.content-right-que {
+  width: 197rpx;
+  height: 194rpx;
+  float: right;
+  background-size: 100% 100%;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/timetraveldialogright.png?versionId=CAEQBhiBgIDzu9nGzhciIGFiNDA0OWRkNTEyOTRjOTRhMTg2Zjg3NTZiMGZjZTU5);
+}
+
+.content-right-que-text {
+  font-size: 38rpx;
+  line-height: 45rpx;
+  margin-left: 30rpx;
+  margin-top: 70rpx;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-img {
+  width: 294rpx;
+  height: 98rpx;
+  background-size: 100% 100%;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/timetraveldialogknow.png?versionId=CAEQBhiBgIDZudnGzhciIGU5Zjg4MzgyMzNkYTQzNTRiOTM5MzYxMTdmNGFlN2E2);
+  text-align: center;
+  line-height: 96rpx;
+}
+
+.footer {
+  margin-top: 100rpx;
+  font-size: 36rpx;
+  color: white;
+  line-height: 56rpx;
+  font-family: stylefont;
+}
+
+.cover {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.model {
+  width: 610rpx;
+  height: 1000rpx;
+  background-size: 120%;
+  z-index: 2;
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/windowbg.png?versionId=CAEQBhiBgID7vNnGzhciIDdhMmZmODFhNmU4YTRhYTQ4ZmJiZDZiN2Q5YTgwZGY3);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 10rpx;
+}
+
+.close {
+  height: 30rpx;
+  width: 30rpx;
+  float: right;
+  position: fixed;
+  right: 40rpx;
+top: 40rpx;
+  z-index: 5;
+}
+
+.faclose {
+  width: 100%;
+}
+
+.poemcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 38rpx;
+  font-family: kaiti;
+  margin-top: 40rpx;
+  padding: 25rpx;
+}
+.rightname{
+  font-size: 40rpx;
+  margin-bottom: 25rpx;
+}
+.showpoetrydetail{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 15rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+.showpoetrydetailtitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 38rpx;
+  font-family: stylefont;
+  margin-bottom: 15rpx;
+}
+
+.on {
+  color: #D45252;
+  border-bottom: 3rpx solid #D45252;
+}
+.swiper-box{
+  font-size: 38rpx;
+  font-family: kaiti;
+  /* width: 550rpx; */
+}
+.line-height{
+  line-height: 50rpx;
+}
+.shangxi{
+  height: 400rpx;
+}
+
+.intime1{
+  width: 400rpx;
+  height: 300rpx;
+  position: absolute;
+  left: 300rpx;
+  top: 15rpx;
+}
+.iniknow{
+  font-size: 56rpx;
+  color: aliceblue;
+  position: absolute;
+  right: 40rpx;
+  font-family:stylefont;
+  bottom: 150rpx;
+}
+.intime2{
+  position: absolute;
+  top: 400rpx;
+}
+.intime3{
+  position: absolute;
+  top: 850rpx;
+  left: 140rpx;
+}

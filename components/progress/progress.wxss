@@ -1,0 +1,16 @@
+.progress-container {
+  width: 250rpx;
+  height: 10rpx;
+  background: rgba(0, 0, 0, 0.15);
+  position: relative;
+  border-radius: 10rpx;
+}
+
+.block {
+  background: rgba(0, 0, 0, 0.15);
+  height: 10rpx;
+  position: absolute;
+  left: 0;
+  border-radius: 10rpx;
+
+}

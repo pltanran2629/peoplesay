@@ -27,6 +27,60 @@
         {
           "name": "pages/poem/poem",
           "pathName": "pages/poem/poem",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/center/center",
+          "pathName": "pages/center/center",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/notice/notice",
+          "pathName": "pages/notice/notice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/interestingthing/interestingthing",
+          "pathName": "pages/interestingthing/interestingthing",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/timetravel/timetravel",
+          "pathName": "pages/timetravel/timetravel",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/lifetravel/lifetravel",
+          "pathName": "pages/lifetravel/lifetravel",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "colorui/components/cu-custom",
+          "pathName": "colorui/components/cu-custom",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/aboutus/aboutus",
+          "pathName": "pages/aboutus/aboutus",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/record/record",
+          "pathName": "pages/record/record",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/question/question",
+          "pathName": "pages/question/question",
           "scene": null
         }
       ]

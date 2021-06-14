@@ -1,0 +1,30 @@
+page{
+  background-image: url(https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/ingterestthingbg2.png?versionId=CAEQBhiBgIDq7dzGzhciIDlkNzk3NmQ4NmMwNjRlMGQ5MGRlYmMwODFjZWViMWUw);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.main {
+  text-align: center;
+  margin: 100rpx;
+  font-family: KaiTi;
+ /* background-image: url(http://bluemsum.tech:8082/image/ingterestthingbg2.png);
+  background-size:650rpx 1440rpx; */
+}
+.main-title{
+  font-size: 64rpx;
+  font-weight: 900;
+ padding-bottom: 40rpx;
+  padding-top: 20rpx;
+  /* line-height: 100rpx; */
+  font-family: stylefont;
+}
+.main-name{
+  font-size: 32rpx;
+}
+.main-story{
+  margin-top: 25rpx;
+  font-size: 34rpx;
+  text-align: left;
+  line-height: 60rpx;
+  text-indent:2em;
+}

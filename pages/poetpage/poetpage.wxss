@@ -1,29 +1,50 @@
-/* pages/poetpage/poetpage.wxss */
-.cu-bar{
-  margin-top: 40rpx;
-}
-.buttonplacetime {
-  margin-left: 200rpx;
-  margin-bottom: 60rpx;
+.btnword {
+  float: left;
+  margin-left: 130rpx;
+  margin-top: 70rpx;
 }
 
-.buttonplacelife {
-  margin-left: 200rpx;
+.poetimg {
+  width: 800rpx;
+  height: 800rpx;
 }
 
-.thatbutton {
-  height: 100rpx;
-  font-family: KaiTi;
-  font-size: 23px;
-  background-image: url(https://img1.baidu.com/it/u=216660009,3790029769&fm=26&fmt=auto&gp=0.jpg);
-  background-size: 100%;
+.poetimg>image {
+  position: fixed;
+  height: 801rpx;
+  width: 448rpx;
+  right: 0rpx;
+  bottom: 0;
+  z-index: -1;
 }
 
-.imageplace {
-  margin-top: 80rpx;
-  padding-right: 250rpx;
+.shijian {
+  width: 500rpx;
+  height: 260rpx;
 }
 
-.poetimage {
-  width: 300rpx;
+.cover {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.inpoet {
+  width: 400rpx;
+  height: 300rpx;
+  position: absolute;
+  left: 300rpx;
+  top: 300rpx;
+}
+
+.iniknow {
+  font-size: 56rpx;
+  color: aliceblue;
+  position: absolute;
+  left: 20rpx;
+  font-family: stylefont;
+  bottom: 400rpx;
 }

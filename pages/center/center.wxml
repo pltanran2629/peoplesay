@@ -1,2 +1,50 @@
-<!--pages/center/center.wxml-->
-<text>pages/center/center.wxml</text>
+<view class="container">
+  <view class="header">
+    <view class="flex solid-bottom padding">
+			<!-- 头像 -->
+			<view class="my-xl my-ava margin-left">
+			<open-data type="userAvatarUrl" ></open-data>
+		</view>
+		<!-- 用户名 -->
+    <view class=" my-username">
+		 <open-data type="userNickName" ></open-data>
+		</view>
+    </view>
+  </view>
+  <view class="cu-list menu sm-border card-menu my-menubgcolor" >
+				<view class="cu-item arrow my-menu contenthover">
+					<view class="content">
+						<view class="content" open-type="redirect" bindtap="torecord">
+						<!-- <text class="cuIcon-favor my-menucolor"></text> -->
+						<image src="../../image/center/youli.png" width="60" height="60"></image>
+						<text class="my-menucolor my-menutext">游历记录</text>
+						</view>
+					</view>
+				</view>
+				<view class="cu-item arrow my-menu contenthover">
+					<view class="content">
+						<view class="content" bindtap="tonotice" open-type="redirect">
+						<!-- <text class="cuIcon-notice my-menucolor"></text> -->
+						<image src="../../image/center/xitong.png" width="60" height="60"></image>
+						<text class="my-menucolor my-menutext">系统通知</text>
+						</view>
+					</view>
+				</view>
+				<view class="cu-item arrow my-menu contenthover">
+					<view class="content"  bindtap="toaboutus" open-type="redirect">
+						<!-- <text class="cuIcon-group my-menucolor"></text> -->
+						<image src="../../image/center/guanyuwomen.png" width="60" height="60"></image>
+						<text class="my-menucolor my-menutext">关于我们</text>
+					</view>
+				</view>
+				<view class="cu-item arrow my-menu contenthover" style="position:relative;">
+					<view class="content" bindtap="toquestion" open-type="redirect">
+						<!-- <text class="cuIcon-community my-menucolor"></text> -->
+						<image src="../../image/center/wentifankui.png" width="60" height="60" style="float:left;"></image>
+						<!-- <button class="my-menucolor quesbut" open-type="contact" type="default-light" session-from bindcontact="handleContact">问题反馈</button> -->
+						<text class="my-menucolor my-menutext">问题反馈</text>
+					</view>
+        </view>
+        </view>
+</view> 
+<!-- my-menu -->

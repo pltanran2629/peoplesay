@@ -685,7 +685,7 @@ radio.white[checked] .wx-radio-input {
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	padding: 0 30rpx;
+	padding: 0 10rpx;
 	font-size: 28rpx;
 	height: 64rpx;
 	line-height: 1;
@@ -1271,7 +1271,6 @@ button.icon.lg {
 	display: flex;
 	padding-right: 10rpx;
 	height: 140rpx;
-	background-color: var(--white);
 	justify-content: flex-end;
 	align-items: center
 }
@@ -1340,7 +1339,6 @@ button.icon.lg {
 	display: flex;
 	padding: 0 30rpx;
 	min-height: 100rpx;
-	background-color: var(--white);
 	justify-content: space-between;
 	align-items: center
 }
@@ -1543,6 +1541,7 @@ button.icon.lg {
 	align-items: center;
 	min-height: 100rpx;
 	justify-content: space-between;
+	margin-top: 40rpx;
 }
 
 .cu-bar .action {
@@ -2356,12 +2355,13 @@ button.icon.lg {
 
 .cu-form-group {
 	background-color: var(--white);
-	padding: 1rpx 30rpx;
+	padding: 1rpx 35rpx;
 	display: flex;
 	align-items: center;
-	min-height: 70rpx;
-	width: 75%;
+	min-height: 84.6rpx;
+	width:622rpx;
 	justify-content: space-between;
+	border-radius: 41rpx;
 }
 
 .cu-form-group+.cu-form-group {
@@ -2382,6 +2382,7 @@ button.icon.lg {
 	font-size: 30rpx;
 	color: #555;
 	padding-right: 20rpx;
+	border-radius: 41rpx;
 }
 
 .cu-form-group>text[class*="cuIcon-"] {

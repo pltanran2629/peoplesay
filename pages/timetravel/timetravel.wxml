@@ -1,0 +1,102 @@
+<!--pages/timetravel/timetravel.wxml-->
+<!-- 返回 -->
+<view class="cu-bar">
+  <view class="action" bindtap="backtopoetpage">
+    <text class="cuIcon-back text-gray"></text> 返回
+  </view>
+</view>
+<view class="contain">
+  <view class="header">
+    <swiper class="swiper1" current="{{swiper.current}}" bindchange="swiperchange" next-margin="15rpx" previous-margin="15rpx">
+      <block wx:for="{{lifetime}}" wx:for-item="item" wx:key="key">
+        <swiper-item class="headerswiper">
+          <image src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/7-bg-top.png?versionId=CAEQBhiBgICL69zGzhciIDQ2NGRmODU5MzhjZjQ3ZDE4ZjA2ZjQxZWVhN2IxNjky" class="swiperitemplace">
+            <view class="headercontent">
+              <view class="headercontent-top" data-lifeid="{{item.lifeId}}">{{item.lifeSection}}</view>
+              <view class="headercontent-center">
+                <block wx:for="{{tagname}}" wx:for-item="itemtag" wx:key="key" wx:for-index="tagindex">
+                  <view class="headercontent-center-item" data-tagid="{{itemtag.tagId}}" bindtap="choosetag"
+                    wx:if="{{tagindex<3}}">
+                    <text class='{{length[tagindex]<3?"twochar":"threechars"}}'>{{itemtag.tagName}}</text>
+                  </view>
+                </block>
+              </view>
+              <view>
+                <image src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/shuaxin@2x.png?versionId=CAEQBhiBgIDZkofHzhciIGNjNDViNzBlN2JlNDQwMzdhMDQ4NjAzZTkwMDkxYzVh" bindtap="loadtagname"
+                  class="headercontent-center-bottom">
+                </image>
+              </view>
+            </view>
+          </image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="content">
+    <view class="content-left">
+      <image src="{{poetimg}}" class="content-left-image"></image>
+    </view>
+    <view class="content-right">
+      <view class="content-right-ans">
+        <view class="content-right-ans-text" bindtap="opencover">{{poetanswer}}</view>
+      </view>
+      <view class="content-right-que">
+        <view class="content-right-que-text">{{askquestion}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="footer" wx:if="{{showwantknow}}">
+    <view class="footer-img" bindtap="iwantknowanswer">{{iwant}}</view>
+    <view class="footer-img" bindtap="idontknow">不感兴趣</view>
+  </view>
+</view>
+<view class="cover" wx:if="{{cover}}">
+  <view class="model">
+    <view class="faclose" bindtap="closecover">
+      <image class="close" src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/widowclose.png?versionId=CAEQBhiBgMCBvNnGzhciIGY3ZTE0YmExNGRlNTQ3ZWU4NDA5NWQ0NTgxOGFiYjkz"></image>
+    </view>
+    <scroll-view style="height:900rpx; width:100%" scroll-y="true">
+      <!-- 前半部分展示这首古诗 -->
+      <!-- <scroll-view> -->
+      <view class="poemcontent">
+        <view class="rightname" wx:if="{{ifshowdetail}}">{{poetryName}}</view>
+        <view class="rightname" wx:if="{{ifshowdetail}}">[{{poetryDynasty}}]{{poetName}}</view>
+        <view><text>{{poemdetail}}</text></view>
+      </view>
+      <!-- </scroll-view> -->
+      <!-- 展示下面的解析 -->
+      <view class="showpoetrydetail" wx:if="{{ifshowdetail}}">
+        <view class="showpoetrydetailtitle">
+          <view class="{{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">译文</view>
+          <view class="{{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">赏析</view>
+          <view class="{{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">背景</view>
+        </view>
+        <swiper class="shangxi" current="{{currentTab}}"  bindchange="bindChange" next-margin="0" previous-margin="0">
+          <swiper-item class="swiper-box" >
+              <scroll-view style="height:100%;" scroll-y="true">
+                <view><text class="line-height">{{translate}}</text></view>
+              </scroll-view>
+            </swiper-item>
+            <swiper-item class="swiper-box">
+              <scroll-view style="height:100%;" scroll-y="true">
+                <view><text class="line-height">{{appreciate}}</text></view>
+              </scroll-view>
+            </swiper-item>
+            <swiper-item class="swiper-box">
+              <scroll-view style="height:100%;" scroll-y="true">
+                <view><text class="line-height">{{comment}}</text></view>
+              </scroll-view>
+            </swiper-item>
+        </swiper>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<view class="cover" wx:if="{{introduct}}">
+<image class="intime1" wx:if="{{intime1}}" src="https://7775-wubh576-1gmqw25u1d0f40a5-1305563425.tcb.qcloud.la/intime1.png?sign=9b30ae80fa537028bff99a506a90ea81&t=1621939138"></image>
+<view class="iniknow" wx:if="{{intime1}}" bindtap="inknow1">了解后，请点击这里</view>
+<image class="intime2" wx:if="{{intime2}}" src="https://7775-wubh576-1gmqw25u1d0f40a5-1305563425.tcb.qcloud.la/intime2.png?sign=a13a197c31a2caacf225a6210265b0bd&t=1621939515"></image>
+<view class="iniknow" wx:if="{{intime2}}" bindtap="inknow2">了解后，请点击这里</view>
+<image class="intime3" wx:if="{{intime3}}" src="https://7775-wubh576-1gmqw25u1d0f40a5-1305563425.tcb.qcloud.la/intime3.png?sign=937d7c90ef65d62a2e8fb4dafb0af189&t=1621939765"></image>
+<view class="iniknow" wx:if="{{intime3}}" bindtap="inknow3">了解后，请点击这里</view>
+</view>

@@ -1,22 +1,34 @@
-<!--index.wxml-->
 <view class="container">
   <view class="main">
-    <swiper class="main-recommend" indicator-dots="true">
-      <swiper-item class="main-recommend-one">
-        <text class="main-recommend-one-title">李白那些事</text>
-        <view class="main-recommend-one-content">中心论坛更多 思想政治教育研究中心2021年硕士研究生拟录取名单2021/04/09 东北师范大学思
-          想政治教育研究中心2021年硕士研究生 网络远程复试流程通...2021/03/31 东北师范大学思想政治教育</view>
-      </swiper-item>
-      <swiper-item class="main-recommend-one">
-        <text class="main-recommend-one-title">李白那些事</text>
-        <view class="main-recommend-one-content">中心论坛更多 思想政治教育研究中心2021年硕士研究生拟录取名单2021/04/09 东北师范大学思
-          想政治教育研究中心2021年硕士研究生 网络远程复试流程通...2021/03/31 东北师范大学思想政治教育</view>
-      </swiper-item>
-      <swiper-item class="main-recommend-one">
-        <text class="main-recommend-one-title">李白那些事</text>
-        <view class="main-recommend-one-content">中心论坛更多 思想政治教育研究中心2021年硕士研究生拟录取名单2021/04/09 东北师范大学思
-          想政治教育研究中心2021年硕士研究生 网络远程复试流程通...2021/03/31 东北师范大学思想政治教育</view>
-      </swiper-item>
+    <swiper current="{{numswiper}}" class="swiper" bindchange="bindchange">
+      <block wx:for="{{poetinteresting}}" wx:for-item="item" wx:key="interesting">
+        <swiper-item class="main-recommend" data-storyid="{{item.storyId}}" bindtap="tointerestingthing">
+          <view class="fatherpl">
+            <image src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/bg_biaoti@2x.png?versionId=CAEQBhiBgMCP3dzGzhciIDljNTRkNDA5MGZiMjRmZWVhNDliZTM2NTRhMWMwM2Vk" class="commend-title">
+              <view class="commend-title-storyname">{{item.storyName}}</view>
+            </image>
+            <image src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/bg_neirong@2x.png?versionId=CAEQBhiBgMCA5NzGzhciIDkyMDVmZmIyZDcwNzQ0MWE5ZWJmZWRjODU3OTVkMGVl"
+              class="slide-image {{swiperIndex == index ? 'active' : 'quiet'}} commend-content">
+              <view class="commend-content-storydes">
+                <text>{{item.storyDesc}}</text>
+              </view>
+              <view class="lookdetail">点击查看详情</view>
+            </image>
+          </view>
+        </swiper-item>
+      </block>
     </swiper>
   </view>
+  <progress size="{{poetinteresting.length}}" index="{{numswiper}}"></progress>
+</view>
+<view class="cover" wx:if="{{introduct}}">
+  <image
+    src="https://7775-wubh576-1gmqw25u1d0f40a5-1305563425.tcb.qcloud.la/pic.png?sign=ff5a8ac113e8416cdeabb8dafc7fc87d&t=1622300244"
+    class="inindex1" wx:if="{{inindex1}}"></image>
+  <view class="iniknow" bindtap="iknow">了解后，点击这里嗷</view>
+
+  <image class="inindex2" wx:if="{{inindex2}}"
+    src="https://7775-wubh576-1gmqw25u1d0f40a5-1305563425.tcb.qcloud.la/inindex2.png?sign=ff928280b60e4587ec080e34e9696183&t=1621935694">
+  </image>
+  <view class="iniknow" wx:if="{{inindex2}}" bindtap="iknow1">了解后，点击这里嗷</view>
 </view>

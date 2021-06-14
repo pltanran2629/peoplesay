@@ -1,0 +1,4 @@
+<!--components/progress/progress.wxml-->
+<view class="progress-container">
+  <view style="width: {{ 200 / size }}rpx; left: {{ 200 / size * index }}rpx" class="block"></view>
+</view>

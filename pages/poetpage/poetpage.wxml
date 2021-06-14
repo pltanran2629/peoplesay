@@ -1,19 +1,28 @@
 <!--pages/poetpage/poetpage.wxml-->
 <view class="cu-bar">
   <view class="action" bindtap="backtodialog">
-    <text class="cuIcon-back text-gray"></text> 返回
+    <text class="cuIcon-back text-gray"></text><text class="backbut">返回</text>
   </view>
 </view>
-<view class="container">
-  <view class="buttonplace">
-    <view class="buttonplacetime">
-      <button class="cu-btn thatbutton">时间畅游</button>
-    </view>
-    <view class="buttonplacelife">
-      <button class="cu-btn thatbutton">游历一生</button>
+<view class="container1">
+  <view class="introbtn-1">
+
+    <view class="btnword animation-slide-left" bindtap="topagetimetravel">
+      <image src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/oldpeoplesay.png?versionId=CAEQBhiBgIDHudnGzhciIDFhZWZkYmRiMmFhNDQyOTRhNmRhZDY2MGIzYTBjY2I2" class="shijian"></image>
     </view>
   </view>
-  <view class="imageplace">
-    <image src="../../image/poetpage/libai.png" class="poetimage"></image>
+  <view class="introbtn-2">
+    <view class="btnword animation-slide-right" bindtap="topagelifetravel">
+      <image src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/youli.png?versionId=CAEQBhiBgMD0vdnGzhciIGZjY2U4NDBjMWJhNzRhYjliMjM4NmUzZmI3NTkzNWRh" class="shijian"></image>
+    </view>
   </view>
+  <view class="poetimg">
+    <image src="{{poetimg}}"></image>
+  </view>
+</view>
+<view class="cover" wx:if="{{introduct}}">
+  <image class="inpoet"
+    src="https://7775-wubh576-1gmqw25u1d0f40a5-1305563425.tcb.qcloud.la/intime1.png?sign=2adf9fc290e39d1564e0bcc631477a6f&t=1622271467">
+  </image>
+  <view class="iniknow" bindtap="iknow">了解后，点击这里嗷</view>
 </view>

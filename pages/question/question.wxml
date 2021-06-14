@@ -1,0 +1,11 @@
+<view class="cu-bar">
+  <view class="action" bindtap="backtocenter">
+    <text class="cuIcon-back text-gray"></text><text class="backbut">返回</text>
+  </view>
+</view>
+<view class="container">
+  <view class="text">联系[古人言]团队进行咨询</view>
+  <button class="my-menucolor quesbut" open-type="contact" type="default-light" session-from
+    bindcontact="handleContact">问题反馈</button>
+    <image src="https://wubh-one-bucket.oss-cn-beijing.aliyuncs.com/images/oldersay.png?versionId=CAEQBhiBgMC2udnGzhciIDFjZDdiOWYzOTQyZTQwNWVhNmU4MzMwN2NiNjZkN2Rh" class="oldersay animation-shake"></image>
+  </view>
